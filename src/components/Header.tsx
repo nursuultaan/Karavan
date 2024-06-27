@@ -24,8 +24,8 @@ const Header = () => {
     const menu = (
         <Menu>
             {links.map((link, index) => (
-                <Menu.Item key={index}>
-                    <Link to={link.url}>
+                <Menu.Item style={{width:"200px"}} key={index}>
+                    <Link to={link.url} className={"capitalize text-[16px]"}>
                         {link.label}
                     </Link>
                 </Menu.Item>
