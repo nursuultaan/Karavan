@@ -74,7 +74,7 @@ const inputChange: InputNumberProps['onChange'] = (value) => {
 
 const Filters = () => {
     return (
-        <div className={"flex flex-col gap-2 sm:p-5 p-2 sm:w-[300px]"}>
+        <div className={"flex flex-col lg-full gap-2 sm:p-5 p-2 sm:w-[300px]"}>
             <Cascader
                 placeholder={"Location"}
                 style={{ width: '100%' }}
@@ -86,7 +86,7 @@ const Filters = () => {
                 dropdownClassName={"p-2 sm:w-[300px]"}
                 dropdownRender={(menu) => <div style={{ width: '100%' }}>{menu}</div>}
             />
-            <div className={"flex gap-3 w-full mb-4 mt-2"}>
+            <div className={"flex gap-3  w-full mb-4 mt-2"}>
                 <InputNumber size="large" min={1} max={100000} style={{ width: '100%' }} placeholder={"Price From"} onChange={inputChange} />
                 <InputNumber size="large" min={1} max={100000} style={{ width: '100%' }} placeholder={"Price To"} onChange={inputChange} />
             </div>

@@ -2,7 +2,8 @@
 const Category = () => {
 
 
-    const categories = ['all','auto','realty','jobs','other']
+    const categories = ['all','auto','realty','jobs','other'];
+
 
 
     return (
@@ -12,8 +13,6 @@ const Category = () => {
                 {categories.map((el)=>{
                     return(<li key={el}  className="flex items-center cursor-pointer flex-shrink-0 px-5 py-2  dark:border-gray-300 dark:text-gray-600 capitalize">{el}</li>)
                 })}
-
-
 
             </div>
         </div>
