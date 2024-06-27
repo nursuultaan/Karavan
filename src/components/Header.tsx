@@ -1,7 +1,6 @@
 import logo from '../assets/karavan1.png'
 import {Link} from "react-router-dom";
-import React, {useEffect, useState} from "react";
-import {Dropdown, Menu, MenuProps, Space} from "antd";
+import {Dropdown, Menu, Space} from "antd";
 
 const Header = () => {
 
@@ -40,7 +39,7 @@ const Header = () => {
         <header className="p-4 dark:text-gray-700 ">
             <div className="container flex justify-between h-16 mx-auto items-center">
                 <span  className="flex items-center justify-center ">
-                    <img className={"w-[12rem] h-auto"} src={logo}/>
+                    <img alt={"Logo"} className={"w-[12rem] h-auto"} src={logo}/>
                 </span>
                 <ul className="items-stretch hidden space-x-3 md:flex">
                     {links.map((link,index) => {
